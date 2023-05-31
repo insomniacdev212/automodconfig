@@ -24,31 +24,15 @@ type: submission
 
 author:
   account_age: "< 5 days"
-
-  satisfy_any_threshold: false
+  combined_karma: "< 15"
+  satisfy_any_threshold: true
 
 action: remove
 
 action_reason: "User has an account younger than 5 days"
 
-comment: "Your account is not old enough to post here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
+comment: "Your account is not old enough or does not have enough karma to post here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
 ---
-
----
-type: comment
-
-author:
-  account_age: "< 5 days"
-
-  satisfy_any_threshold: false
-
-action: remove
-
-action_reason: "User has an account younger than 5 days old. Commonly spam accounts."
-
-message: "Your account is not old enough to comment here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
----
-
 ---
 # Spam domains
 
@@ -324,11 +308,11 @@ domain+body+title+media_description+url (regex,includes):
 
 moderators_exempt: true
 
-action: remove
+action: spam
 author:
   set_flair: ["watch", watch-user-auto]
 
-action_reason: "Bad links"
+action_reason: "spam links"
 ---
 
 ---
@@ -822,7 +806,7 @@ domain+body+title+media_description+url (includes):
 
 moderators_exempt: true
 
-action: remove
+action: spam
 
 action_reason: "Link Shortener"
 
@@ -867,6 +851,7 @@ body (includes):
 moderators_exempt: true
 
 action: remove
+action_reason: spammy comment {{match}}
 # author:
 #   set_flair: ["watch", watch-user-auto]
 ---
@@ -880,7 +865,7 @@ title+body (includes-word): [
     "premium",
     "mega.nz",
     "mega.co",
-    mega.io',
+    "mega.io",
     # "virus",
     # "corona",
     # "coronavirus",
@@ -889,7 +874,6 @@ title+body (includes-word): [
     "Duh!",
     "%E2%9D%A4%EF%B8%8F",
     "leakgirls",
-    "camgirls",
     "=>",
     "hornypeoples",
     "lewd sex",
@@ -902,10 +886,6 @@ title+body (includes-word): [
     "reminds",
     "girl to add",
     "play with them",
-    "titties",
-    "instagram",
-    "tiktok",
-    "IG",
     "bregoli",
     "NSFWPornScene",
     "GDP",
@@ -923,8 +903,6 @@ title+body (includes-word): [
 moderators_exempt: true
 action: remove
 action_reason: "Blacklisted Domain (Spam domains): {{match}}"
-author:
-  set_flair: ["watch", watch-user-auto]
 ---
 
 ---
@@ -992,7 +970,7 @@ set_locked: true
 # Rule34/AI Porn spam
 type: comment
 body (regex, includes-word): ["rule34", "AI.gone"]
-action: spam
+action: spam 
 action_reason: AI Spam
 ---
 # Personal Info from stalkers and/or copyright holders, will be auto-removed and ModMail notification sent to ban user
@@ -1160,7 +1138,7 @@ title+body+media_description (regex):
   ]
 action: remove
 comment: |
-  Your post has been removed because it violates our rule against asking for karma. Asking for upvotes, likes, comments, or any other form of vote manipulation is not allowed on this subreddit. This includes any language that hints at or encourages users to engage in vote manipulation. Please review the rules before posting again. *If you think your post was removed wrongfully, please message the mods.*
+  Your {{kind}} has been removed because it violates our rule against asking for karma. Asking for upvotes, likes, comments, or any other form of vote manipulation is not allowed on this subreddit. This includes any language that hints at or encourages users to engage in vote manipulation. Please review the rules before posting again. *If you think your post was removed wrongfully, please message the mods.*
 ---
 # Mass spam crossposters and other ban evading subs
 # ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1849,6 +1827,8 @@ title+body:
     "add her",
     "groupchat",
     "instagram",
+    "insta",
+    "facebook",
     "tiktok",
     "IG",
   ]
