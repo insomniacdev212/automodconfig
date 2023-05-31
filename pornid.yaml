@@ -1747,7 +1747,7 @@ title+body (regex):
   ]
 action: remove
 action_reason: "social in post ({{match}})"
-comment: "Your post was removed due to it containing a reference or link to an external social media or communications app. we do not allow those here. If you believe this is a mistake please feel free to contact the sub moderators. Attempts to circumvent our sub rules or mod tools will lead to you getting banned. *If you think your post was removed wrongfully, please message the mods.* "
+comment: "Your post was removed due to it containing a reference or link to an external social media or communications app. We do not allow those here. If you believe this is a mistake please feel free to contact the sub moderators. Attempts to circumvent our sub rules or mod tools will lead to you getting banned. *If you think your post was removed wrongfully, please message the mods.* "
 ---
 
 ---
