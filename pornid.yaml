@@ -1,0 +1,1874 @@
+---
+# removed shadowbanned users
+type: any
+author:
+  flair_css_class: "watch-user-auto"
+action: remove
+action_reason: "Shadow Ban"
+moderators_exempt: true
+---
+
+---
+# Filter possible bot accounts
+
+author:
+  name (ends-with): ["bot"]
+
+action: filter
+
+action_reason: "Username ends in the word Bot, check for possible bot spam."
+
+---
+type: submission
+
+author:
+  account_age: "< 5 days"
+
+  satisfy_any_threshold: false
+
+action: remove
+
+action_reason: "User has an account younger than 5 days"
+
+message: "Your account is not old enough to post here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
+
+---
+type: comment
+
+author:
+  account_age: "< 5 days"
+
+  satisfy_any_threshold: false
+
+action: remove
+
+action_reason: "User has an account younger than 5 days old. Commonly spam accounts."
+
+message: "Your account is not old enough to comment here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
+
+---
+# Spam domains
+
+type: any
+
+domain+body+title+media_description+url (regex,includes):
+  [
+    "xxxtik.com",
+    "pornovideosx.info",
+    "redditpagematrics.com",
+    "xtokk.com",
+    "influencersgonewild.org",
+    "xnimo.com",
+    "toleaks.com",
+    "xxxthebesthub.com",
+    "boobpedia.net",
+    "evoload.io",
+    "tubexxxhot.com",
+    "streamtape.com",
+    "bestrealdoll.com",
+    "ic9.in",
+    "nudelinks.cc",
+    "hotpornbay.com",
+    "anybunny.us",
+    "accidentalpussy.com",
+    "frontpagemetrics.com",
+    "porndio.com",
+    "chicaespectacular.com",
+    "stepmilf.net",
+    "pagexxx.net",
+    "pornkyxxx.pro",
+    "xxxvideod.net",
+    "megifs.biz",
+    "pornvedeo.net",
+    "strippingteen.online",
+    "nudepicturearchive.com",
+    "tubgifs.info",
+    "tik-thots.online",
+    "fap.bar",
+    "nudes7.com",
+    "gonewild.life",
+    "gfycatcdn.club",
+    "gfycatcdn.xyz",
+    "redditplug.com",
+    "reddit.tube",
+    "slidingtrade.com",
+    "clip-trend.com",
+    "cliptrend.co",
+    "cliptrend.org",
+    "slutmesh.work",
+    "slutmesh.space",
+    "slutmesh.com",
+    "exclusivepornclub.com",
+    "pladollmo.com",
+    "tiktokonlyfans.com",
+    "tiktok.plus",
+    "drespalda.com",
+    "bestpornsites.net",
+    "bestpornamateur.com",
+    "yubo.live",
+    "allgirlsporn.com",
+    "ebonycumsluts.com",
+    "onlyfree.xyz",
+    "pornhdxxx.net",
+    "onlyfan.xyz",
+    "onlyfan.org",
+    "sheissearching.com",
+    "sluttycamshows.com",
+    "cosplaylewd.com",
+    "thotbook.tv",
+    "sharemynudes.com",
+    "milf.town",
+    "teenselfies.com",
+    "pawg.fans",
+    "asianfever.xyz",
+    "nudecamscf.blogspot.com",
+    "pornslam.com",
+    "gknn.org",
+    "ibradome.com",
+    "thothub.cc",
+    "nudostar.com",
+    "quickdates7.com",
+    "datingmaniavip.com",
+    "realgirlsnsfw.com",
+    "jizzedtothis.com",
+    "pornsauces.com",
+    "igorbnews.com",
+    "sluts500.com",
+    "rainbow500.com",
+    "fusioncashss.xyz",
+    "fknbot.com",
+    "discord.gg",
+    "discordapp.com",
+    "discordapp.page.link",
+    "aii.sh",
+    "gonewild.life",
+    "gfycatcdn.club",
+    "gfycatcdn.xyz",
+    "tiktok.plus",
+    "url.gratis",
+    "abre.ai",
+    "redditplug.com",
+    "reddit.tube",
+    "slidingtrade.com",
+    "aponu.org",
+    "clip-trend.com",
+    "cliptrend.co",
+    "cliptrend.org",
+    "direct-link.net",
+    "exe.io",
+    "linkvertise.com",
+    "shrink-service.it",
+    "adshrink.it",
+    "slutmesh.work",
+    "slutmesh.space",
+    "slutmesh.com",
+    "pladollmo.com",
+    "drespalda.com",
+    "bestpornsites.net",
+    "bestpornamateur.com",
+    "hoop.photo",
+    "thekinkykingdom.com",
+    "blog.adultsmart.com.au",
+    "sendvid.com",
+    "maniclove.ca",
+    "havenporn.com",
+    "maniclove.com",
+    "maturepornhd.com",
+    "adultsmart.com.au",
+    "pornaffected.com",
+    "oursexyvideos.com",
+    "passiondesirehub.com",
+    "convoswithcosmo.com",
+    "bestsextoysforguys.com",
+    "curiousvibration.com",
+    "syncarmy.com",
+    "tugbro.com",
+    "theenhancedmale.com",
+    "realtouchscripts.com",
+    "sexlikereal.com",
+    "blogspot.com",
+    "tenor.casa",
+    "tenor.fun",
+    "phrendly.com",
+    "tenor.icu",
+    "tinyasiantube.com",
+    "fullnelsontube.com",
+    "climaxtube.com",
+    "pukingtube.com",
+    "analcreampietube.com",
+    "toestube.com",
+    "coveredincumtube.com",
+    "lactatingtube.com",
+    "tattooedtube.com",
+    "doggystyletube.com",
+    "buttplugtube.com",
+    "cmnftube.com",
+    "cumeatingtube.com",
+    "oiledtube.com",
+    "pigtailstube.com",
+    "oldwomantube.com",
+    "highdefinitiontube.com",
+    "rimjobtube.com",
+    "gaggingtube.com",
+    "scissoringtube.com",
+    "hogtiedtube.com",
+    "glassestube.com",
+    "imgur.buzz",
+    "hairlesstube.com",
+    "assspankingtube.com",
+    "disgracetube.com",
+    "schoolgirlstube.com",
+    "bigclittube.com",
+    "obscenegames.site",
+    "gonewild.buzz closuptube.com",
+    "closeuptube.com",
+    "bracestube.com",
+    "oldwomantube.com",
+    "porn-xxxadult.com",
+    "teenager365.com",
+    "fuckmachinetube.com",
+    "old.besthotporn.club",
+    "redgifs.life",
+    "xxxgames.site",
+    "new.besthotporn.club",
+    "besthotporn.club",
+    "redgifs.work",
+    "loyaproject.com",
+    "nutakugame.site",
+    "?.site",
+    "obscenesexygame.site",
+    "obscene-games.host",
+    "redgifs.icu",
+    "redgifs.monster",
+    "tophotporn.xyz",
+    "obscenegames.host",
+    "redgifs.rest",
+    "redgifs.uno",
+    "hornier.sbs",
+    "linktr.ee",
+    "t.me",
+    "hornier.cc",
+    "hardcorensfw.sbs",
+    "bunkr.is",
+    "hardcorensfw.com",
+    "yespornpleasexxx.com",
+    "hijdhajdh.ru",
+    "wiveshub.com",
+    "barzoon.info",
+    "exporntoons.net",
+    "packsonly.eu",
+    "hotsexx6.me",
+    "sexxxdolls2.me",
+    "starushubxlaw.me",
+    "?.website",
+    "facecheck.id",
+    "pornfaia.co",
+    "linkmix.co",
+    "deltanude.com",
+    "linkmix.co",
+    "pornaub.com",
+    "xxx-sexsxhub1.live",
+    "hdvipporn18.live",
+    "?.live",
+    "pormhub.live",
+    "pormhub",
+    "linkmix.co",
+    "lbx.to",
+    "highcpmrevenuenetwork.com",
+    "abjectionblame.com",
+    "sli.cx",
+    "?.cx",
+    "?.cc",
+    "?.cfd",
+    "hardcorensfw.cfd",
+    "d-ld.net",
+    "perfectnaked.com",
+    "hornierporn.live",
+    "xfantazy.com",
+    "viraltop.info",
+    "?.info",
+    "?.click",
+    "yespornplease ",
+    "porneqxx.live",
+    "bestpornhd.click",
+    "newvidporn6.live",
+    "ultraporntb1.live",
+    "tegram.me",
+    "VideoDownloadNode",
+    "bhind.site",
+    "bb953.cyou",
+    "bing.com",
+    "?.live",
+    "pornleakz.?",
+    "xtelegram.me",
+    "pornxnude.live",
+    "mega.nz",
+    "mega.co",
+    "mega.io",
+    "leakedplay.com",
+    "bunkr.la",
+    "pornleakz.co",
+    "mat6tube.com",
+    "?.xyz",
+    "gofile.us",
+    "zleaks.one",
+    "?.top",
+    ".mu/",
+    "fappening",
+    "temu.co",
+    "blogshare.cfd",
+  ]
+
+moderators_exempt: true
+
+action: remove
+
+action_reason: "Bad links"
+
+---
+# Filter all submissions with crosspost in title or other subreddits / users. Often used in advertising.
+
+type: submission
+
+title (includes):
+  [
+    "x-post",
+    "crosspost",
+    "x-posted",
+    "cross-posted",
+    "/r/",
+    "/u/",
+    "titties",
+    "Upvote",
+  ]
+
+moderators_exempt: true
+
+action: filter
+
+action_reason: Cross-posting, possible advertising other subreddits
+
+---
+# List of link shorteners, there's really no use for them other than to bypass existing filters. You are free to change action to filter if you want to review it.
+
+type: any
+
+domain+body+title+media_description+url (includes):
+  [
+    gestyy.com,
+    discord.gg,
+    adfoc.us,
+    ouo.io,
+    shorte.st,
+    my.su,
+    5.gp,
+    0rz.tw,
+    1-url.net,
+    126.am,
+    1tk.us,
+    1un.fr,
+    1url.com,
+    1url.cz,
+    1wb2.net,
+    2.gp,
+    2.ht,
+    2ad.in,
+    2doc.net,
+    2fear.com,
+    2long.cc,
+    2tu.us,
+    2ty.in,
+    2u.xf.cz,
+    3ra.be,
+    3x.si,
+    4i.ae,
+    4view.me,
+    5em.cz,
+    5url.net,
+    5z8.info,
+    6fr.ru,
+    6g6.eu,
+    7.ly,
+    76.gd,
+    77.ai,
+    7fth.cc,
+    7li.in,
+    7vd.cn,
+    8u.cz,
+    944.la,
+    98.to,
+    L9.fr,
+    Lvvk.com,
+    To8.cc,
+    a0.fr,
+    abbr.sk,
+    ad-med.cz,
+    ad5.eu,
+    ad7.biz,
+    adb.ug,
+    adf.ly,
+    adfa.st,
+    adfly.fr,
+    adli.pw,
+    adv.li,
+    ajn.me,
+    aka.gr,
+    alil.in,
+    any.gs,
+    aqva.pl,
+    ares.tl,
+    asso.in,
+    au.ms,
+    ayt.fr,
+    azali.fr,
+    b00.fr,
+    b23.ru,
+    b54.in,
+    baid.us,
+    bc.vc,
+    bee4.biz,
+    bim.im,
+    bit.do,
+    bit.ly,
+    bitw.in,
+    blap.net,
+    ble.pl,
+    blip.tv,
+    boi.re,
+    bote.me,
+    bougn.at,
+    br4.in,
+    brk.to,
+    brzu.net,
+    bul.lu,
+    bxl.me,
+    bzh.me,
+    cachor.ro,
+    captur.in,
+    cbs.so,
+    cbug.cc,
+    cc.cc,
+    ccj.im,
+    cf.ly,
+    cf2.me,
+    cf6.co,
+    cjb.net,
+    cli.gs,
+    clikk.in,
+    cn86.org,
+    couic.fr,
+    cr.tl,
+    cudder.it,
+    cur.lv,
+    curl.im,
+    cut.pe,
+    cut.sk,
+    cutt.eu,
+    cutt.us,
+    cutu.me,
+    cybr.fr,
+    cyonix.to,
+    d75.eu,
+    daa.pl,
+    dai.ly,
+    dd.ma,
+    ddp.net,
+    dft.ba,
+    doiop.com,
+    dolp.cc,
+    dopice.sk,
+    droid.ws,
+    dv.gd,
+    dyo.gs,
+    e37.eu,
+    ecra.se,
+    ely.re,
+    erax.cz,
+    erw.cz,
+    ex9.co,
+    ezurl.cc,
+    fff.re,
+    fff.to,
+    fff.wf,
+    filz.fr,
+    fnk.es,
+    foe.hn,
+    folu.me,
+    freze.it,
+    fur.ly,
+    g00.me,
+    gg.gg,
+    goo.gl,
+    goo.lu,
+    grem.io,
+    guiama.is,
+    hadej.co,
+    hide.my,
+    hjkl.fr,
+    hops.me,
+    href.li,
+    ht.ly,
+    i-2.co,
+    i99.cz,
+    icit.fr,
+    ick.li,
+    icks.ro,
+    iiiii.in,
+    iky.fr,
+    ilix.in,
+    info.ms,
+    is.gd,
+    isra.li,
+    itm.im,
+    ity.im,
+    ix.sk,
+    j.gs,
+    j.mp,
+    jdem.cz,
+    jieb.be,
+    jp22.net,
+    jqw.de,
+    kask.us,
+    kfd.pl,
+    korta.nu,
+    kr3w.de,
+    krat.si,
+    kratsi.cz,
+    krod.cz,
+    kuc.cz,
+    kxb.me,
+    l-k.be,
+    lc-s.co,
+    lc.cx,
+    lcut.in,
+    letop10.,
+    libero.it,
+    lick.my,
+    lien.li,
+    lien.pl,
+    lin.io,
+    linkn.co,
+    llu.ch,
+    lnk.co,
+    lnk.ly,
+    lnk.sk,
+    lnks.fr,
+    lnky.fr,
+    lnp.sn,
+    lp25.fr,
+    m1p.fr,
+    m3mi.com,
+    make.my,
+    mcaf.ee,
+    mdl29.net,
+    mic.fr,
+    migre.me,
+    minu.me,
+    more.sh,
+    mut.lu,
+    myurl.in,
+    net.ms,
+    net46.net,
+    nicou.ch,
+    nig.gr,
+    nov.io,
+    nq.st,
+    nxy.in,
+    o-x.fr,
+    okok.fr,
+    ou.af,
+    ou.gd,
+    oua.be,
+    ow.ly,
+    p.pw,
+    parky.tv,
+    past.is,
+    pdh.co,
+    ph.ly,
+    pich.in,
+    pin.st,
+    plots.fr,
+    plots.fr,
+    pm.wu.cz,
+    po.st,
+    ppfr.it,
+    ppst.me,
+    ppt.cc,
+    ppt.li,
+    prejit.cz,
+    ptab.it,
+    ptm.ro,
+    pw2.ro,
+    py6.ru,
+    q.gs,
+    qbn.ru,
+    qqc.co,
+    qr.net,
+    qrtag.fr,
+    qxp.cz,
+    qxp.sk,
+    rb6.co,
+    rcknr.io,
+    rdz.me,
+    redir.ec,
+    redir.fr,
+    redu.it,
+    ref.so,
+    reise.lc,
+    relink.fr,
+    ri.ms,
+    riz.cz,
+    rod.gs,
+    roflc.at,
+    rt.se,
+    s-url.fr,
+    safe.mn,
+    sagyap.tk,
+    sdu.sk,
+    seeme.at,
+    segue.se,
+    sh.st,
+    sh.st,
+    shar.as,
+    short.cc,
+    short.ie,
+    short.pk,
+    shrt.in,
+    shy.si,
+    sicax.net,
+    sina.lt,
+    sk.gy,
+    skr.sk,
+    skroc.pl,
+    smll.co,
+    sn.im,
+    snsw.us,
+    soo.gd,
+    spn.sr,
+    sq6.ru,
+    ssl.gs,
+    su.pr,
+    surl.me,
+    sux.cz,
+    sy.pe,
+    t.cn,
+    t.co,
+    ta.gd,
+    tabzi.com,
+    tau.pe,
+    tdjt.cz,
+    thesa.us,
+    tin.li,
+    tini.cc,
+    tiny.cc,
+    tiny.lt,
+    tiny.ms,
+    tiny.pl,
+    tinyurl.com,
+    tinyurl.hu,
+    tixsu.com,
+    tldr.sk,
+    tllg.net,
+    tnij.org,
+    tny.cz,
+    to.ly,
+    tohle.de,
+    tpmr.com,
+    tr.im,
+    tr5.in,
+    trck.me,
+    trick.ly,
+    trkr.ws,
+    trunc.it,
+    twet.fr,
+    twi.im,
+    twlr.me,
+    twurl.nl,
+    u.to,
+    uby.es,
+    ucam.me,
+    ug.cz,
+    ulmt.in,
+    unlc.us,
+    upzat.com,
+    ur1.ca,
+    url2.fr,
+    url5.org,
+    urlin.it,
+    urls.fr,
+    urlz.fr,
+    urub.us,
+    utfg.sk,
+    v.gd,
+    v.ht,
+    v5.gd,
+    vaaa.fr,
+    valv.im,
+    vaza.me,
+    vbly.us,
+    vd55.com,
+    verd.in,
+    vgn.me,
+    vov.li,
+    vsll.eu,
+    vt802.us,
+    vur.me,
+    vv.vg,
+    w1p.fr,
+    waa.ai,
+    wb1.eu,
+    web99.eu,
+    wed.li,
+    wideo.fr,
+    wp.me,
+    wtc.la,
+    wu.cz,
+    ww7.fr,
+    wwy.me,
+    x.nu,
+    x10.mx,
+    x2c.eu,
+    x2c.eumx,
+    xav.cc,
+    xgd.in,
+    xib.me,
+    xl8.eu,
+    xoe.cz,
+    xrl.us,
+    xt3.me,
+    xua.me,
+    xub.me,
+    xurls.co,
+    yagoa.fr,
+    yagoa.me,
+    yau.sh,
+    yeca.eu,
+    yect.com,
+    yep.it,
+    yogh.me,
+    yon.ir,
+    youfap.me,
+    ysear.ch,
+    yyv.co,
+    z9.fr,
+    zSMS.net,
+    zapit.nu,
+    zeek.ir,
+    zip.net,
+    zkr.cz,
+    zkrat.me,
+    zkrt.cz,
+    zoodl.com,
+    zpag.es,
+    zti.me,
+    zxq.net,
+    zyva.org,
+    zzb.bz,
+    tl.gd,
+    qqurl.com,
+    lnkd.in,
+    db.tt,
+    qr.ae,
+    bitly.com,
+    adcrun.ch,
+    viralurl.com,
+    twitthis.com,
+    buzurl.com,
+    u.bb,
+    yourls.org,
+    crisco.com,
+    prettylinkpro.com,
+    viralurl.biz,
+    adcraft.co,
+    virl.ws,
+    scrnch.me,
+    filoops.info,
+    vurl.bz,
+    vzturl.com,
+    lemde.fr,
+    tweez.me,
+    tinyarrows.com,
+    xn--hgi.ws,
+    amzn.to,
+    "?.ws",
+    "?.tk",
+    "?.buzz",
+    "?.site",
+    "?.club",
+    "?.work",
+    "?.xyz",
+    "?.host",
+    "?.sbs",
+    ?.sbs,
+    "?.cc",
+    "?.ru",
+    "linktr.ee",
+    "?.eu",
+    "?.me",
+    "sexxxdolls2.me",
+    "starushubxlaw.me",
+    "?.website",
+    "?.id",
+    "?.live",
+    "linkmix.?",
+    "sli.cx",
+    "?.cx",
+    "urlpoints.com",
+    "bhind.site",
+    "pornleakz.co",
+    "mat6tube.com",
+    "?.xyz",
+    "temu.com",
+    "?.cfd",
+  ]
+
+moderators_exempt: true
+
+action: remove
+
+action_reason: "Link Shortener"
+
+---
+# Filter spammy comments
+
+type: comment
+
+body (includes):
+  [
+    "/user/",
+    "invite",
+    "boobnosis",
+    "linktr",
+    "TeenGirlsLovers",
+    "instagram",
+    "tiktok",
+    "IG",
+    "bregoli",
+    "help4porn",
+    "NSFWPornScene",
+    "deltanude",
+    "pornaub",
+    "remindme",
+    "RemindMe",
+    "!RemindMe",
+    "RemindMe!",
+    "!Remind",
+    "pormhub",
+    "linkmix",
+    "upvote",
+    "SaveVideo",
+    "/u/savevideo",
+    "on my profile",
+    "my posts",
+    "my page",
+    "my profíle",
+    "pornxnude",
+    "BaddieHub",
+    "pornleakz",
+    "xyz",
+    "fappening",
+    "TeenGirlsLover",
+    "blogshare",
+  ]
+
+moderators_exempt: true
+
+action: remove
+
+---
+# Common spam words
+
+type: any
+
+title+body (includes-word):
+  [
+    "premium",
+    "mega.nz",
+    "mega.co",
+    mega.io',
+    "selling",
+    "$",
+    "snapchat",
+    "snap",
+    "dropbox",
+    "cashapp",
+    "venmo",
+    "onlyfans",
+    "follow",
+    "manyvids",
+    "patreon",
+    "discord",
+    "virus",
+    "corona",
+    "coronavirus",
+    "simulator",
+    "Sale",
+    "porn",
+    "Sextape",
+    "paypal",
+    "$",
+    "dm",
+    "pm",
+    "Duh!",
+    "Check My Profile",
+    "My Profile",
+    "profile",
+    "%E2%9D%A4%EF%B8%8F",
+    "leakgirls",
+    "camgirls",
+    "=>",
+    "hornypeoples",
+    "lewd sex",
+    "sex game",
+    "localGW",
+    "HornyWomenSex",
+    "obscene",
+    "hentai",
+    "game",
+    "reminds",
+    "girl to add",
+    "play with them",
+    "titties",
+    "instagram",
+    "tiktok",
+    "IG",
+    "bregoli",
+    "NSFWPornScene",
+    "GDP",
+    "GirlsDoPorn",
+    "Girls Do Porn",
+    "Girls-Do-Porn",
+    "girls-do-porn",
+    "upvote",
+    "/u/SaveVideo",
+    "BaddieHub",
+    "Utahjaz",
+    "pornleakz",
+    "!Remind",
+  ]
+
+moderators_exempt: true
+action: remove
+action_reason: "Blacklisted Domain (Spam domains): {{match}}"
+author:
+  set_flair: ["watch", watch-user-auto]
+---
+# Misc suspicious ( Proxies/IP Grabbers )
+domain+body+title+media_description:
+  [
+    ngrok.com,
+    ngrok.io,
+    canarytokens.com,
+    amishdatacenter.com,
+    amishprincess.com,
+    bmwforum.co,
+    canadianlumberjacks.club,
+    canadianlumberjacks.online,
+    catsnthing.com,
+    catsnthings.fun,
+    curiouscat.club,
+    datasig.io,
+    datauth.io,
+    dateing.club,
+    discörd.com,
+    disçordapp.com,
+    fortnight.space,
+    fortnitechat.site,
+    freegiftcards.co,
+    gaming-at-my.best,
+    gamingfun.me,
+    grabify.link,
+    headshot.monster,
+    imageshare.best,
+    joinmy.site,
+    leancoding.co,
+    lovebird.guru,
+    minecräft.com,
+    otherhalf.life,
+    packetlivesmatter.club,
+    packetlivesmatter.online,
+    poweredbydialup.club,
+    poweredbydialup.online,
+    poweredbydialup.org,
+    poweredbysecurity.online,
+    poweredbysecurity.org,
+    progaming.monster,
+    screenshare.host,
+    screenshot.best,
+    shrekis.life,
+    spottyfly.com,
+    stopify.co,
+    trulove.guru,
+    yourmy.monster,
+    yourtube.site,
+    youtubeshort.pro,
+    youtubeshort.watch,
+    yoütu.be,
+  ]
+action: remove
+action_reason: "Blacklisted Domain (Misc): {{match}}"
+author:
+  set_flair: ["watch", watch-user-auto]
+moderators_exempt: true
+set_locked: true
+---
+
+---
+# Personal Info from stalkers and/or copyright holders, will be auto-removed and ModMail notification sent to ban user
+
+type: comment
+
+title+body (includes):
+  [
+    "Kayla Shaw",
+    "KaylaShaw",
+    "KaylaShaw_official",
+    "Britney Oldridge",
+    "Oldridge",
+    "Fufa se jebe sa drugom",
+    "Vasia",
+    "Vasilia Bozini",
+    "Serbia klinka sa razbija sa drugom iz skole",
+    "Prezgodnu klinku jebe neiskusni drug posle skole",
+    "Serbian college girl- sex with classmate",
+    "Otvoreni su prozori",
+    "I am at cas affair - Fufa se jebe sa drugom",
+    "Fufa jebe drugom",
+    "Christina cataldo",
+    "Cataldo",
+    "Truemyracle",
+    "Emma Glover",
+    "flawlesspao",
+    "glorygirlp",
+    "glorygirlpao",
+    "Bella Patton",
+    "jjubaby",
+    "jjuubaby",
+    "Thriwawayact",
+    "Definitely_not_afake",
+    "definitely_not_afake",
+    "Rebecca Bardaro",
+    "onlylovestella",
+    "cnttss",
+    "chariezared",
+    "Charlotte Chiang",
+    "Charlotte Chiang Ya Yuan",
+    "Orlovsky",
+    "loadsoflonnie",
+    "phone call",
+    "scotty",
+    "tia ramos",
+    "Mati Marroni",
+    "matildem",
+    "matildam",
+    "Wolfermann",
+    "Mary Jane Auryn",
+    "Auryn",
+    "Urmumanddad321",
+    "Urmumanddad12345",
+    "powerpufgalz",
+    "Bella Diaz",
+    "Ujvarosi",
+    "lilbigbutt666",
+    "Nigiotti",
+    "Emmi Sellers",
+    "EmmiSellers",
+    "Bethvolio",
+    "BethUnfiltered",
+    "Bethvolio_extras",
+    "Skye Lily",
+    "Goddard",
+    "Olivia Shaw",
+    "Ginevradp",
+    "Moodie Maggie",
+    "YourPierini",
+    "Brandy Gordon",
+  ]
+
+modmail_subject: "USER POSTING OR REQUESTING BANNED CONTENT - REMOVE CONTENT AND BAN AS NECESSARY."
+
+modmail: |
+
+  [**The post's link**]({{permalink}})
+
+moderators_exempt: true
+
+action: remove
+
+action_reason: "Banned content. Remove content after comment is automatically removed."
+
+---
+
+---
+# underage
+type: any
+title+body (regex): ["(12|13|14|15|16|17) (yo|years?)"]
+~title+body (regex): ["for (12|13|14|15|16|17) (years?)"]
+action: remove
+action_reason: You must be 18 years or older to post in this subreddit. We do not permit minors under the age of 18 to view, comment, nor do we allow mentioning actions done as a minor.
+---
+
+---
+#removed low effort posts(less than 8 characters in title)
+type: submission
+~title (regex, includes): ["(.{8,})"]
+author:
+  is_contributor: false
+action: remove
+action_reason: Title shorter than 8 characters
+comment: |
+  Sorry your post was removed because posts with less titles than 8 characters in the body are considered "low effort" in this sub.
+---
+
+---
+# Remove 3+ reports and send modmail
+reports: 3
+action: remove
+modmail_subject: "Multiple reports."
+modmail: The above {{kind}} posted by /u/{{author}} received 3+ reports and has been removed.
+---
+
+---
+# Group referral and invite spam sites
+type: any
+body: [hoop.photo, getwinkapp.com, joinfambase.com]
+action: remove
+action_reason: "Blacklisted Domain (Group/Invites): {{match}}"
+comment: "Your comment has been removed, we do not allow invite/group sites."
+moderators_exempt: true
+set_locked: true
+
+---
+
+---
+# vote manipulation
+type: any
+title+body+media_description (regex):
+  [
+    "up(vot|v)(e|es|ing|ed)",
+    "(karma|vote)(s|d)",
+    "(comment|post) score",
+    "please (upvote|like|vote|comment|view|share) (this)",
+    "(please ) (support|boost|promote) me",
+    "(click|press)(\\s+up|like|vote)(\\s+if)",
+    "(share|spread) the word",
+    "vot(e|es) for me",
+    "please check out my",
+    "please give me a (like|upvote)",
+    "please (sub|subscribe) to my",
+    "(hit|smash) ( |the|an|that) arrow",
+    "arrow up",
+    "arrow if (you|your)",
+    "say hello if it's ok",
+    "if (.*) I owe you",
+    "up and comment",
+    "raise your hand if",
+    "react if you",
+    "rate (me|my)",
+    "free dick rate",
+    "Say “Yes” if",
+    "How long should I be caged",
+    "(say|type) (.)(\\w*)(.) if you",
+    "ONLY like this if",
+    "i should post",
+    "post more",
+    "should i post",
+    "decide (.*) how long I should be locked up",
+    "Pls do it",
+    "(send|type) (.*) if you",
+  ]
+action: remove
+comment: |
+  Your post has been removed because it violates our rule against asking for karma. Asking for upvotes, likes, comments, or any other form of vote manipulation is not allowed on this subreddit. This includes any language that hints at or encourages users to engage in vote manipulation. Please review the rules before posting again. *If you think your post was removed wrongfully, please message the mods.*
+---
+# Mass spam crossposters and other ban evading subs
+# ------------------------------------------------------------------------------------------------------------------------------------------------------
+type: crosspost submission
+crosspost_subreddit:
+  name:
+    [
+      "AdultCamPromo",
+      "PAWGSluts",
+      "BestCamSluts",
+      "HotButts",
+      "PremiumSnapSluts",
+      "PornoCasino",
+      "FanCentroBabes",
+      "RileyReidWorld",
+      "PornstarsClothed",
+      "PhatButt",
+      "JiaLissaClub",
+      "Badgirlnatasha",
+      "AsaAkiraWorld",
+      "AbellaDangerClub",
+      "IRage_Babe",
+      "Amberly_Ray",
+      "EsperanzaGomezWorld",
+      "MelRoseMichaels",
+      "AngelaWhiteWorld",
+      "SammiStarfish",
+      "AutumnFallsClub",
+      "Rubyxo",
+      "PremiumSnapArabs",
+      "HotBootyClub",
+      "AssZone",
+      "HotAssClub",
+      "Secretsofserenity",
+      "SophieDeeClub",
+      "Lilimissarab",
+      "LelaStarWorld",
+      "EvaElfieClub",
+      "KinkyKatey_",
+      "LanaRhoadesClub",
+      "DaniDanielsClub",
+      "AJApplegateWorld",
+      "RoseMonroeClub",
+      "EvaLoviaWorld",
+      "CherieDeVilleClub",
+      "MoriahMillsClub",
+      "KarmenKarmaClub",
+      "PremiumSnapAsstastic",
+      "Hometraining",
+      "RomiRainClub",
+      "hugetitsinbikinis",
+      "HornyCuteGirls",
+    ]
+action: remove
+
+---
+# Potentially unwanted words & content / Non-English Characters.
+# Words that usually cause beg spam or other messes
+# There is probably a better way to do this
+# ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# remove 0CA0, 30C4, various French/Spanish letters
+title+body (regex, includes):
+  [
+    "(?#Assorted)[\U00000180-\U0000024F\U00000400-\U00000C9F\U00000CA1-\U0000139F\U00002C80-\U00002CFF]+",
+    "(?#CJK Unified Ideographs)[\U00004E00-\U00009FFF]",
+    "(?#Hiragana)[\U00003041-\U00003096]+",
+    "(?#Katakana)[\U000030A1-\U000030C3\U000030C5-\U000030FA]+",
+    "(?#Korean)[\U0000AC00-\U0000D7AF]",
+    "(?#Vietnamese)[ìòýăĐđĩũơưạảấầẩẫậắằặẻẽếềểễệỉịọỏốồổỗộớờởợụủứừửữựỳỷỹ]",
+  ]
+action: remove
+action_reason: "Non-English spam [{{match}}]"
+
+---
+body+title (regex, includes):
+  [
+    "(?#Latin Extended-A)(?-i:[\u0100-\u017f]+)",
+    "(?#Latin Extended-B)[\u0180-\u024f]+",
+    "(?#Combining Diacritical Marks)[\u0300-\u0335\u0337-\u0360\u0362-\u036f]+",
+    "(?#Cyrillic)[\u0400-\u052f]+",
+    "(?#Hebrew)[\u0590-\u05ff]+",
+    "(?#Arabic)[\u0600-\u0669\u066b-\u06ff]+",
+    "(?#Devanagari)[\u0900-\u097f]+",
+    "(?#Bengali)[\u0980-\u09ff]+",
+    "(?#Gurmukhi)[\u0a00-\u0a7f]+",
+    "(?#Tamil)[\u0b80-\u0bff]+",
+    "(?#Kannada)[\u0c80-\u0cff]+",
+    "(?#Thai)[\u0e00-\u0e7f]+",
+    "(?#Latin Extended Additional)[\u1e00-\u1eff]+",
+    "(?#Hiragana)[\u3041-\u3096]+",
+    "(?#Katakana)[\u30a1-\u30c3\u30c5-\u30fa]+",
+    "(?#CJK Unified Ideographs)[\u4e00-\u9fff]+",
+    "(?#Hangul)[\uac00-\ud7af]+",
+  ]
+action: remove
+action_reason: "Non-English [{{match}}]"
+---
+type: submission
+title+body (regex, includes): ["(?-i:[ÀÂÆÇÈÉÊËÎÏÔÙÛÜàâæçèêëîïôùûüÿŒœŸ])"]
+body+title (regex):
+  [
+    '(?<!\bdu.)jours?',
+    '(?<!\blaissez.)faire',
+    'a(insi|lors|ucune|ujourd[\x27’]hui|ussi|utres?|vait|vec|voir)',
+    "b(iens?|onnes?)",
+    'c([\x27’]est(?!.magnifique\b)|ela|es|ette|hez|omme|omptes?|ontre)',
+    'd([\x27’]autres|[\x27’]un|[\x27’]une|ans|epuis|eux|its?|onc|roite)',
+    "e(ffets?|lles?|ntre|ntreprises?)",
+    "f(aits?|aut|ois)",
+    "gauche",
+    "ils",
+    'j([\x27’]ai|amais)',
+    'l([\x27’]on|es|eurs?|oi|ui)',
+    "m(ais|oi|oins|ois|onde)",
+    'n([\x27’]a|[\x27’]est|iveau|ous|ouveau|ouvelles?)',
+    "oui",
+    "p(artie|as|ersonnes?|eu|eut|euvent|eux|ourquoi|roduits?|utain)",
+    'qu([\x27’]ils?|[\x27’]on|and|elles?|elques|els?|i|oi)',
+    "r(este|ien)",
+    's([\x27’]est|elon|erait|oit|ont|ouvent|uis|ur)',
+    't([\x27’]as|[\x27’]es|ermes?|itres?|oujours?|ous|outes?|rois|rop|rouves?)',
+    "une",
+    'v(ais|ers|oir(?!.dire\b)|ous)',
+  ]
+action: remove
+action_reason: "Non-English (French) [{{match-title+body}}], [{{match-body+title}}]"
+---
+type: submission
+title+body (regex, includes): ["[ÄÖÜßäöü]"]
+body+title:
+  [
+    "(aber|alles|als|auch|auf|bei|bist|bitte|damit|danke|dann|dass|dein|deine|dem|denn|der|des|diese|dieser|dir|doch|ein|eine|einem|einen|einer|einfach|etwas|euch|frau|ganz|gehen|geht|gesagt|gibt|gott|hab|haben|hast|hatte|heute|hier|ihm|ihn|ihnen|ihr|immer|jetzt|kann|kannst|kein|keine|komm|kommen|kommt|leben|leute|los|machen|mehr|meine|meinen|mich|mit|nein|nicht|nichts|nie|noch|nur|oder|sagen|schon|sehen|sehr|sein|sich|sicher|soll|und|uns|viel|von|vor|warum|wenn|werde|werden|wie|wieder|willst|wirklich|wissen|wollen|wollte|wurde|zeit|zum|zur)",
+  ]
+action: remove
+action_reason: "Non-English (German) [{{match-title+body}}], [{{match-body+title}}]"
+---
+type: submission
+title+body (regex, includes):
+  ["(?-i:[¡ªº¿ÀÁÂÃÇÈÉÊÌÍÑÒÓÔÕÙÚÜàáâãçèêìíñòóôõùúü])"]
+body+title (regex):
+  [
+    "a(lgo|cha|cho|hora|inda|lguém|lguien|nos|penas|qui|ssim|té)",
+    "b(em|ueno)",
+    "c(asa|erto|oisa|oisas|omo|osa|osas|reo|uando)",
+    "d(ecir|epois|esde|espués|eus|eve|ia|ije|ijo|ios|isse|izer|ois|onde)",
+    "e(la|le|les|llos|ntonces|res|sa|se|so|spera|ssa|sse|sta|staba|stamos|star|stas|stava|ste|sto|stou|stoy)",
+    "f(alar|az|azendo|azer|icar|oi|ue|uera)",
+    "g(ente|racias)",
+    "h(ablar|ace|acer|echo|ijo|ola|ombre|omem)",
+    "i(sso|sto)",
+    "l(he|ugar)",
+    "m(ais|ejor|elhor|esmo|eu|ierda|inha|is|ismo|omento|ucho|uito|undo|uy)",
+    "n(ada|adie|em|oche|oite|os|osotros|unca)",
+    "o(brigado|nde|tra|tro)",
+    "p(ai|arece|asa|elo|ero|essoas|ode|odemos|or|orque|osso|ouco|ra|reciso|uede|uedes|uedo)",
+    "qu(al|ando|é|em|er|ero|ién|iere|ieres|iero)",
+    "s(abes|eguro|ei|em|empre|enhor|eu|eus|iempre|iento|obre|ua)",
+    "t(alvez|ambém|ambién|em|emos|enemos|engo|enho|er|iempo|iene|ienes|inha|ipo|odo|odos|rabajo|udo|us)",
+    "u(ma|no|sted)",
+    "v(amos|er|erdad|erdade|ez|ida|ou|oy)",
+  ]
+action: remove
+action_reason: "Non-English (Spanish or Portuguese) [{{match-title+body}}], [{{match-body+title}}]"
+---
+
+---
+# Slur filter
+type: any
+body (regex):
+  [
+    "n(1|i)g(g?(3|e)?r)?s?",
+    "chinks?",
+    "spi(c|k)s?",
+    "gooks?",
+    "crack(er|a)s?",
+    "fag(got(ry)?|gy)?s?",
+    "trann(ys?|ies?)",
+    "(towel|rag)heads?",
+    "(c|k)oons?",
+    "goatfuckers?",
+    "autis(t|m)?s?",
+    "(re)?tard(ed)?s?",
+  ]
+action: remove
+action_reason: slur filter - {{match}}
+author:
+  set_flair: ["watch", watch-user-auto]
+---
+# ANTI DOXXING
+# ------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+# Removes comments with phone numbers
+title+body (regex):
+  [
+    "\\(?(\\d{3})\\)?([ .-])(\\d{3})([ .-])(\\d{4})",
+    "(\\d{5})([ .-])(\\d{6})",
+    "\\(?(\\d{4})\\)?([ .-])(\\d{3})([ .-])(\\d{3})",
+    "\\(?(\\d{2})\\)?([ .-])(\\d{4})([ .-])(\\d{4})",
+    "\\(?(\\d{2})\\)?([ .-])(\\d{3})([ .-])(\\d{4})",
+    "\\+([\\d ]{10,15})",
+  ]
+~body+url (regex): "(\\[[^\\]]+?\\]\\()?(https?://|www\\.)\\S+\\)?"
+~body+title+url (regex):
+  [
+    "(800|855|866|877|888|007|911)\\W*\\d{3}\\W*\\d{4}",
+    "\\d{3}\\W*555\\W*\\d{4}",
+    "999-999-9999",
+    "000-000-0000",
+    "123-456-7890",
+    "111-111-1111",
+    "012-345-6789",
+    "888-888-8888",
+    "281\\W*330\\W*8004",
+    "777-777-7777",
+    "678-999-8212",
+    "999([ .-])119([ .-])7253",
+    "0118 999 811",
+    "0118 999 881",
+    "867( -)?5309",
+    "505\\W*503\\W*4455",
+    "1024 2048",
+  ]
+action: remove
+action_reason: Phone number - {{match}}
+Comment: No personal information of any kind is allowed in this sub, please read the rules before posting again.
+modmail_subject: Doxxing Alert!
+modmail: |
+
+  {{permalink}}
+
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible phone number. Please investigate immediately.
+
+  If the user is doxxing, [ban them](/r/{{subreddit}}/about/banned) and [report them to the reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&subject=Doxxing%20Report:%20%2Fu%2F{{author}}&message=%2Fu%2F{{author}}%20posted%20a%20phone%20number:%20{{permalink}}) immediately.
+
+---
+
+---
+# Removes comments with email addresses.
+title+body (regex): "[!#$%&'*+./0-9=?_`a-z{|}~^-]+@[.a-z-]+\\.(?:com|org|net)"
+~title+body#whitelist: [OKemail1@domain.com, OKemail2@domain.com]
+action: remove
+action_reason: Email - {{match}}
+Comment:
+  No personal information of any kind is allowed in this sub, please read the rules before posting again.
+
+  {{permalink}}
+
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible email address.
+
+  If the user is doxxing, [report them to the reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&amp;subject=Doxxing%20Report:%20%2Fu%2F{{author}}&message=%2Fu%2F{{author}}%20posted%20an%20email%20address:%20{{permalink}}) immediately.
+---
+
+---
+# Removes comments with English Street addresses.
+title+body (regex):
+  [
+    "\\W[A-Za-z]?\\d{1,6}[A-Za-z]? (E(\\.|ast)?|W(\\.|est)?|N(\\.|orth)?|S(\\.|outh)? )?[\\p{Pi}\\p{Pf}]?\\w+( \\w+)?[\\p{Pi}\\p{Pf}]? (st(reet)?|ave(enue)?|r(oa)?d|dr(ive)?|c(our)?t|blvd|boulevard|lane|ln|highway|hwy|route|rt)",
+  ]
+~title+body#whitelist:
+  [
+    second drive,
+    minute drive,
+    hour drive,
+    day drive,
+    week drive,
+    gb drive,
+    tb drive,
+    123 Main St,
+    123 Main Street,
+    221b baker st,
+    221b baker street,
+  ]
+action: remove
+action_reason: Email - {{match}}
+Comment:
+  No personal information of any kind is allowed in this sub, please read the rules before posting again.
+
+  {{permalink}}
+
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible email address.
+
+  If the user is doxxing, [report them to the reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&amp;subject=Doxxing%20Report:%20%2Fu%2F{{author}}&message=%2Fu%2F{{author}}%20posted%20an%20email%20address:%20{{permalink}}) immediately.
+---
+
+---
+title+body (regex):
+  [
+    '(?!(abuse|help|info|no-?reply|phishing|service|spoof|support)\@)[\w!#$%&\x27*+\-./=?\^\x60{|}~]+\@([\w-]{1,64}\.)+([a-z]{2,16}|xn--[a-z0-9-]{1,60})',
+  ]
+~title+body#whitelist: [okay.address1@example.com, okay.address2@example.com]
+action: remove
+action_reason: Email - {{match}}
+Comment:
+  No personal information of any kind is allowed in this sub, please read the rules before posting again.
+
+  {{permalink}}
+
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible email address.
+
+  If the user is doxxing, [report them to the reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&amp;subject=Doxxing%20Report:%20%2Fu%2F{{author}}&message=%2Fu%2F{{author}}%20posted%20an%20email%20address:%20{{permalink}}) immediately.
+---
+
+---
+title+body (regex):
+  [
+    '\b(?:4[0-9]{12}(?:[0-9]{3})?|5[12345][0-9]{14}|3[47][0-9]{13}|3(?:0[012345]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35[0-9]{3})[0-9]{11})\b',
+  ]
+action: remove
+action_reason: Email - {{match}}
+Comment:
+  No personal information of any kind is allowed in this sub, please read the rules before posting again.
+
+  {{permalink}}
+
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible email address.
+
+  If the user is doxxing, [report them to the reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&amp;subject=Doxxing%20Report:%20%2Fu%2F{{author}}&message=%2Fu%2F{{author}}%20posted%20an%20email%20address:%20{{permalink}}) immediately.
+---
+
+---
+title+body (regex):
+  [
+    '\b(?!(?#RANGES)(10\.|172\.(1[6-9]|2\d|3[01])\.|169\.254\.|192\.168\.)|(?#SINGLES)(1\.0\.0\.1|1\.1\.1\.1|1\.2\.3\.4|8\.8\.4\.4|8\.8\.8\.8|9\.9\.9\.9|127\.0\.0\.1|149\.112\.112\.112|208\.67\.220\.220|208\.67\.222\.222)\b)((25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(25[0-5]|2[0-4]\d|[01]?\d\d?)\b',
+  ]
+action: remove
+action_reason: Email - {{match}}
+Comment:
+  No personal information of any kind is allowed in this sub, please read the rules before posting again.
+
+  {{permalink}}
+
+  The above {{kind}} by /u/{{author}} was removed because it contained a possible email address.
+
+  If the user is doxxing, [report them to the reddit admins](http://www.reddit.com/message/compose?to=%2Fr%2Freddit.com&amp;subject=Doxxing%20Report:%20%2Fu%2F{{author}}&message=%2Fu%2F{{author}}%20posted%20an%20email%20address:%20{{permalink}}) immediately.
+---
+# no advertising config
+# ----------------------------------------------------------------------------------------------------------
+---
+# dissallow advertising POST
+type: submission
+title+body (regex):
+  [
+    "cashapp",
+    "dropbox",
+    "follow my",
+    "sale",
+    "seller",
+    "selling",
+    "look (at|in) comments",
+    "purchase",
+    "purchasing",
+    "mega",
+    "join my",
+    "(I'm|I'll|I want to) buying",
+    "buy my",
+    "add my",
+    "add me",
+    "add her",
+    "decide (.*) how long I should be locked up",
+    "Pls do it",
+    "chat if interested",
+    "(send|type) (.*) if you",
+    "fansly",
+    "onlyfans",
+    "megas",
+    "snap(chat)?s[?]",
+    "snap(chat)?s:",
+    "$nap",
+    "sc",
+    "snap",
+    "snpcht",
+    "snapcht",
+    "snapct",
+    "snpcht",
+    "snapp",
+    "snÄp",
+    "snapme:",
+    "snapc",
+    "snapc:",
+    "$snap",
+    "Snapcht",
+    "snapchat@",
+    "s/c",
+    "selling content",
+    "buy my content",
+    "my content",
+    "buy content",
+    "selling",
+    "seller*",
+    "purchaser?s",
+    "paypal",
+    "cashapp",
+    "venmo",
+    "gcash",
+    "gc",
+    "sn4pchat",
+  ]
+action: remove
+action_reason: post spam removal - {{match}}
+comment: "Your post has been removed because the automod detected it as spam or advertising. These things are not allowed on this sub. Please read the rules before posting again.*If you think your post was removed wrongfully, please message the mods.*"
+---
+
+---
+# dissallow advertising COMMENT
+type: comment
+title+body (regex):
+  [
+    "cashapp",
+    "dropbox",
+    "follow my",
+    "sale",
+    "seller",
+    "selling",
+    "look (at|in) comments",
+    "purchase",
+    "purchasing",
+    "mega",
+    "join my",
+    "(I'm|I'll|I want to) buying",
+    "buy my",
+    "add my",
+    "add me",
+    "add her",
+    "decide (.*) how long I should be locked up",
+    "Pls do it",
+    "chat if interested",
+    "(send|type) (.*) if you",
+    "fansly",
+    "onlyfans",
+    "megas",
+    "snap(chat)?s[?]",
+    "snap(chat)?s:",
+    "$nap",
+    "sc",
+    "snap",
+    "snpcht",
+    "snapcht",
+    "snapct",
+    "snpcht",
+    "snapp",
+    "snÄp",
+    "snapme:",
+    "snapc",
+    "snapc:",
+    "$snap",
+    "Snapcht",
+    "snapchat@",
+    "s/c",
+    "selling content",
+    "buy my content",
+    "my content",
+    "buy content",
+    "selling",
+    "seller*",
+    "purchaser?s",
+    "paypal",
+    "cashapp",
+    "venmo",
+    "gcash",
+    "gc",
+    "sn4pchat",
+  ]
+action: remove
+action_reason: post spam removal - {{match}}
+comment: "Your comment has been removed because the automod detected it as spam or advertising. These things are not allowed on this sub. Please read the rules before posting again.*If you think your post was removed wrongfully, please message the mods.*"
+---
+# no dm config
+# ----------------------------------------------------------------------------------------------------------
+---
+# dissallow dm requests POSTS
+type: submission
+title+body+media_description (regex):
+  [
+    "hit me up",
+    "dm",
+    "dms",
+    "groupchat",
+    "hmu",
+    "i got it",
+    "lmk",
+    "me too please",
+    "me too pls",
+    "more pls",
+    "please post",
+    "pls post",
+    "pm",
+    "reup",
+    "send em",
+    "send it",
+    "send them",
+    "send to me",
+    "somebody post",
+    "would love to chat",
+    "chat if interested",
+    "spam me",
+    "pm",
+    "pms",
+    "leave a (.*) surprise",
+    "any takers",
+    "Pls do it",
+    "Text me",
+    "Seeking",
+    "Searching for",
+  ]
+moderators_exempt: true
+action: remove
+action_reason: "Blacklisted Word: {{match}}"
+comment: "Your post was removed because the automoderator detected it as spam,or a dm request, those things are not allowed here.*If you think this is incorrect please message the mods*"
+---
+
+---
+# dissallow dm requests comments
+type: comment
+body (regex):
+  [
+    "hit me up",
+    "dm",
+    "dms",
+    "groupchat",
+    "hmu",
+    "i got it",
+    "lmk",
+    "me too please",
+    "me too pls",
+    "more pls",
+    "please post",
+    "pls post",
+    "pm",
+    "reup",
+    "send em",
+    "send it",
+    "send them",
+    "send to me",
+    "somebody post",
+    "would love to chat",
+    "chat if interested",
+    "spam me",
+    "pm",
+    "pms",
+    "leave a (.*) surprise",
+    "any takers",
+    "Pls do it",
+    "Text me",
+    "Seeking",
+    "Searching for",
+  ]
+moderators_exempt: true
+action: remove
+action_reason: "Blacklisted Word: {{match}}"
+comment: "Your comment was removed because the automoderator detected it as spam,or a dm request, those things are not allowed here.*If you think this is incorrect please message the mods*"
+---
+
+---
+# dissallow social media
+---
+# social media links POSTS
+type: any
+title+body (regex):
+  [
+    "bio(graph(y|ie)?)?s?",
+    "insta(gram?)[?|:]",
+    "insta(gram?) is",
+    "my t(i|l|1)k(tok)?",
+    "snap(chat)?s[?]",
+    "snap(chat)?s:",
+    "decide (.*) how long I should be locked up",
+  ]
+action: remove
+action_reason: "social in post ({{match}})"
+comment: "Your post was removed due to it containing a reference or link to an external social media or communications app. This violates Rule 6 of our r/sissies rules. If you believe this is a mistake please feel free to contact the sub moderators. Attempts to circumvent our sub rules or mod tools will lead to you getting banned. *If you think your post was removed wrongfully, please message the mods.* "
+---
+
+---
+# dissallow social media
+---
+# social media links
+type: any
+title+body:
+  [
+    "xxxtik",
+    "snap",
+    "snpcht",
+    "snapcht",
+    "snapct",
+    "snpcht",
+    "snapp",
+    "sn@p",
+    "kik",
+    "K ik",
+    "Snap",
+    "Sn@p",
+    "snapchat",
+    "kÏk",
+    "klk",
+    "k:k",
+    "snÄp",
+    "sc",
+    "ki.k",
+    "snåp",
+    "K!K",
+    "k1k",
+    "sn4p",
+    "k.ik",
+    "K . I.k",
+    "K . I.k:",
+    "S nap:",
+    "kiik",
+    "SNAPis",
+    "kick",
+    "kikme:",
+    "snapme:",
+    "kikk",
+    "$nap",
+    "ki:",
+    "wick:",
+    "wicker:",
+    "wicker",
+    "snapc",
+    "snapc:",
+    "$snap",
+    "Snapcht",
+    "snapchat@",
+    "K I K",
+    "Discord",
+    "wickr",
+    "kiiik",
+    "Twitter",
+    "Tik Tok",
+    "kikkk",
+    "Kiikkkmee",
+    "skype",
+    "k.k",
+    "k 1 k",
+    "Kiikik",
+    "Kyik",
+    "wallclaimer",
+    "Ki1k",
+    "s/c",
+    "premiums?",
+    "customs?",
+    "live IG",
+    "IG live",
+    "tgs?",
+    "telegrams?",
+    "discord?s",
+    "casual_hookup",
+    "hornysinglepartner",
+    "dirtyhookups",
+    "sn4pchat",
+    "facetime",
+    "k ik",
+    "discord",
+    "follow my",
+    "kik",
+    "snapchat",
+    "annajournal",
+    "join my",
+    "add my",
+    "add me",
+    "add her",
+    "groupchat",
+  ]
+action: remove
+action_reason: "social in post ({{match}})"
+comment: "Your post was removed due to it containing a reference or link to an external social media or communications app. This violates Rule 6 of our r/sissies rules. If you believe this is a mistake please feel free to contact the sub moderators. Attempts to circumvent our sub rules or mod tools will lead to you getting banned. *If you think your post was removed wrongfully, please message the mods.* "
+---
+
+---
+# Group referral and invite spam sites
+type: any
+body:
+  [
+    youtube.com,
+    youtu.be,
+    discord.gg,
+    discordapp.com,
+    discordapp.page.link,
+    t.me,
+    telegr.im,
+    hoop.photo,
+    getwinkapp.com,
+    joinfambase.com,
+  ]
+action: remove
+action_reason: "Blacklisted Domain (Group/Invites): {{match}}"
+comment: "Your comment has been removed, we do not allow invite/group sites."
+moderators_exempt: true
+set_locked: true
+
+---
+
