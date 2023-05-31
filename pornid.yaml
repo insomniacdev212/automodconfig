@@ -322,6 +322,8 @@ domain+body+title+media_description+url (regex,includes):
 moderators_exempt: true
 
 action: remove
+author:
+  set_flair: ["watch", watch-user-auto]
 
 action_reason: "Bad links"
 
@@ -874,6 +876,8 @@ body (includes):
 moderators_exempt: true
 
 action: remove
+author:
+  set_flair: ["watch", watch-user-auto]
 
 ---
 # Common spam words
