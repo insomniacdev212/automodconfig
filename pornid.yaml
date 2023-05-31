@@ -31,7 +31,7 @@ action: remove
 
 action_reason: "User has an account younger than 5 days"
 
-message: "Your account is not old enough to post here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
+comment: "Your account is not old enough to post here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
 ---
 
 ---
@@ -337,16 +337,7 @@ action_reason: "Bad links"
 type: submission
 
 title (includes):
-  [
-    "x-post",
-    "crosspost",
-    "x-posted",
-    "cross-posted",
-    "/r/",
-    "/u/",
-    "titties",
-    "Upvote",
-  ]
+  ["x-post", "crosspost", "x-posted", "cross-posted", "/r/", "/u/", "Upvote"]
 
 moderators_exempt: true
 
@@ -834,6 +825,8 @@ moderators_exempt: true
 action: remove
 
 action_reason: "Link Shortener"
+
+comment: We do not allow link shorteners on this sub.
 ---
 
 ---
@@ -848,19 +841,11 @@ body (includes):
     "boobnosis",
     "linktr",
     "TeenGirlsLovers",
-    "instagram",
-    "tiktok",
-    "IG",
     "bregoli",
     "help4porn",
     "NSFWPornScene",
     "deltanude",
     "pornaub",
-    "remindme",
-    "RemindMe",
-    "!RemindMe",
-    "RemindMe!",
-    "!Remind",
     "pormhub",
     "linkmix",
     "upvote",
@@ -882,8 +867,8 @@ body (includes):
 moderators_exempt: true
 
 action: remove
-author:
-  set_flair: ["watch", watch-user-auto]
+# author:
+#   set_flair: ["watch", watch-user-auto]
 ---
 
 ---
@@ -891,39 +876,17 @@ author:
 
 type: any
 
-title+body (includes-word):
-  [
+title+body (includes-word): [
     "premium",
     "mega.nz",
     "mega.co",
     mega.io',
-    "selling",
+    # "virus",
+    # "corona",
+    # "coronavirus",
+    # "simulator",
     "$",
-    "snapchat",
-    "snap",
-    "dropbox",
-    "cashapp",
-    "venmo",
-    "onlyfans",
-    "follow",
-    "manyvids",
-    "patreon",
-    "discord",
-    "virus",
-    "corona",
-    "coronavirus",
-    "simulator",
-    "Sale",
-    "porn",
-    "Sextape",
-    "paypal",
-    "$",
-    "dm",
-    "pm",
     "Duh!",
-    "Check My Profile",
-    "My Profile",
-    "profile",
     "%E2%9D%A4%EF%B8%8F",
     "leakgirls",
     "camgirls",
@@ -955,7 +918,6 @@ title+body (includes-word):
     "BaddieHub",
     "Utahjaz",
     "pornleakz",
-    "!Remind",
   ]
 
 moderators_exempt: true
@@ -1558,6 +1520,25 @@ title+body (regex):
     "add my",
     "add me",
     "add her",
+    "selling",
+    "$",
+    "snapchat",
+    "snap",
+    "dropbox",
+    "cashapp",
+    "venmo",
+    "onlyfans",
+    "follow",
+    "manyvids",
+    "patreon",
+    "discord",
+    "Sale",
+    "porn",
+    "Sextape",
+    "paypal",
+    "Check My Profile",
+    "My Profile",
+    "profile",
     "decide (.*) how long I should be locked up",
     "Pls do it",
     "chat if interested",
@@ -1701,7 +1682,6 @@ title+body+media_description (regex):
     "Pls do it",
     "Text me",
     "Seeking",
-    "Searching for",
   ]
 moderators_exempt: true
 action: remove
@@ -1743,7 +1723,6 @@ body (regex):
     "Pls do it",
     "Text me",
     "Seeking",
-    "Searching for",
   ]
 moderators_exempt: true
 action: remove
@@ -1769,6 +1748,15 @@ title+body (regex):
 action: remove
 action_reason: "social in post ({{match}})"
 comment: "Your post was removed due to it containing a reference or link to an external social media or communications app. This violates Rule 6 of our r/sissies rules. If you believe this is a mistake please feel free to contact the sub moderators. Attempts to circumvent our sub rules or mod tools will lead to you getting banned. *If you think your post was removed wrongfully, please message the mods.* "
+---
+
+---
+type: comment
+title+body (regex):
+  ["remindme", "RemindMe", "!RemindMe", "RemindMe!", "!Remind"]
+action: remove
+action_reason: "called remindme bot ({{match}})"
+message: you comment was removed because we do not allow the remond me bot on posts in this sub
 ---
 
 ---
@@ -1860,6 +1848,9 @@ title+body:
     "add me",
     "add her",
     "groupchat",
+    "instagram",
+    "tiktok",
+    "IG",
   ]
 action: remove
 action_reason: "social in post ({{match}})"
