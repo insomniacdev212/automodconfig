@@ -17,7 +17,7 @@ author:
 action: filter
 
 action_reason: "Username ends in the word Bot, check for possible bot spam."
-
+---
 ---
 type: submission
 
@@ -31,7 +31,7 @@ action: remove
 action_reason: "User has an account younger than 5 days"
 
 message: "Your account is not old enough to post here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
-
+---
 ---
 type: comment
 
@@ -45,7 +45,7 @@ action: remove
 action_reason: "User has an account younger than 5 days old. Commonly spam accounts."
 
 message: "Your account is not old enough to comment here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
-
+---
 ---
 # Spam domains
 
@@ -326,7 +326,7 @@ author:
   set_flair: ["watch", watch-user-auto]
 
 action_reason: "Bad links"
-
+---
 ---
 # Filter all submissions with crosspost in title or other subreddits / users. Often used in advertising.
 
@@ -349,7 +349,7 @@ moderators_exempt: true
 action: filter
 
 action_reason: Cross-posting, possible advertising other subreddits
-
+---
 ---
 # List of link shorteners, there's really no use for them other than to bypass existing filters. You are free to change action to filter if you want to review it.
 
@@ -829,7 +829,7 @@ moderators_exempt: true
 action: remove
 
 action_reason: "Link Shortener"
-
+---
 ---
 # Filter spammy comments
 
@@ -878,7 +878,7 @@ moderators_exempt: true
 action: remove
 author:
   set_flair: ["watch", watch-user-auto]
-
+---
 ---
 # Common spam words
 
@@ -957,6 +957,7 @@ action_reason: "Blacklisted Domain (Spam domains): {{match}}"
 author:
   set_flair: ["watch", watch-user-auto]
 ---
+---
 # Misc suspicious ( Proxies/IP Grabbers )
 domain+body+title+media_description:
   [
@@ -1016,7 +1017,12 @@ author:
 moderators_exempt: true
 set_locked: true
 ---
-
+---
+# Rule34/AI Porn spam
+type: comment
+body (regex, includes-word): ['rule34', 'AI.gone']
+action: spam
+action_reason: AI Spam
 ---
 # Personal Info from stalkers and/or copyright holders, will be auto-removed and ModMail notification sent to ban user
 
