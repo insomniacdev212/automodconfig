@@ -1044,15 +1044,17 @@ title+body (includes):
     "Brandy Gordon",
   ]
 
-modmail_subject: "USER POSTING OR REQUESTING BANNED CONTENT - REMOVE CONTENT AND BAN AS NECESSARY."
+# modmail_subject: "USER POSTING OR REQUESTING BANNED CONTENT - REMOVE CONTENT AND BAN AS NECESSARY."
 
-modmail: |
+# modmail: |
 
-  [**The post's link**]({{permalink}})
+#   [**The post's link**]({{permalink}})
+
+report_reason: "USER POSTING OR REQUESTING BANNED CONTENT - REMOVE CONTENT AND BAN AS NECESSARY. {{match}}"
 
 moderators_exempt: true
 
-action: remove
+action: filter
 
 action_reason: "Banned content. Remove content after comment is automatically removed."
 
