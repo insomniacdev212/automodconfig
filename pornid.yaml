@@ -7,16 +7,23 @@ action: remove
 action_reason: "Shadow Ban"
 moderators_exempt: true
 ---
-
+---
+#filter comments with binary
+type: comment
+title+body(regex) : ["[0-1]{4,16}"]
+action: remove
+action_reason: binary {{match}}
+---
 ---
 # Filter possible bot accounts
 
-author:
-  name (ends-with): ["bot"]
+#author:
+#  name (ends-with): ["bot"]
 
-action: filter
+#action: filter
 
-action_reason: "Username ends in the word Bot, check for possible bot spam."
+#action_reason: "Username ends in the word Bot, check for possible bot spam."
+
 ---
 
 ---
@@ -29,7 +36,7 @@ author:
 
 action: remove
 
-action_reason: "User has an account younger than 5 days"
+action_reason: "User has an account younger than 5 days or has less than 15 karma"
 
 comment: "Your account is not old enough or does not have enough karma to post here. Try again in the future. No, we will not tell you how long. This is designed to thwart spammers. Sending a message to the moderators asking for an exception to the rules will get you banned."
 ---
@@ -38,7 +45,7 @@ comment: "Your account is not old enough or does not have enough karma to post h
 
 type: any
 
-domain+body+title+media_description+url (regex,includes):
+domain+body+title+media_description+url (includes) :
   [
     "xxxtik.com",
     "pornovideosx.info",
@@ -312,7 +319,7 @@ action: spam
 author:
   set_flair: ["watch", watch-user-auto]
 
-action_reason: "spam links"
+action_reason: "spam links {{match}}"
 ---
 
 ---
@@ -657,7 +664,7 @@ domain+body+title+media_description+url (includes):
     sux.cz,
     sy.pe,
     t.cn,
-    t.co,
+    \t.co
     ta.gd,
     tabzi.com,
     tau.pe,
@@ -831,7 +838,7 @@ moderators_exempt: true
 
 action: spam
 
-action_reason: "Link Shortener"
+action_reason: "Link Shortener {{match}}"
 
 comment: We do not allow link shorteners on this sub.
 ---
@@ -1565,7 +1572,6 @@ title+body+domain (includes):
     wu.cz,
     ww7.fr,
     wwy.me,
-    x.co,
     x.nu,
     x.se,
     x.vu,
@@ -1636,6 +1642,7 @@ title+body+domain (includes):
     ›.ws,
     tinypic.co,
     goo.gl,
+    link-hub
   ]
 action: remove
 action_reason: Link shortener - {{match}}
@@ -1798,10 +1805,11 @@ set_locked: true
 
 ---
 # Rule34/AI Porn spam
-type: comment
+type: submission
 body (regex, includes-word): ["rule34", "AI.gone"]
 action: spam 
 action_reason: AI Spam
+comment: We don't allow AI or animated posts here.
 ---
 # Personal Info from stalkers and/or copyright holders, will be auto-removed and ModMail notification sent to ban user
 
@@ -1900,15 +1908,15 @@ action_reason: You must be 18 years or older to post in this subreddit. We do no
 ---
 
 ---
-#removed low effort posts(less than 8 characters in title)
+#removed low effort posts(less than 2 characters in title)
 type: submission
-~title (regex, includes): ["(.{8,})"]
+~title (regex, includes): ["(.{2,})"]
 author:
   is_contributor: false
 action: remove
-action_reason: Title shorter than 8 characters
-comment: |
-  Sorry your post was removed because posts with less titles than 8 characters in the body are considered "low effort" in this sub.
+action_reason: Title shorter than 2 characters
+#comment: |
+#  Sorry your post was removed because posts with less titles than 2 characters in the body are considered "low effort" in this sub.
 ---
 
 ---
@@ -1969,8 +1977,9 @@ title+body+media_description (regex):
     "(send|type) (.*) if you",
   ]
 action: remove
-comment: |
-  Your {{kind}} has been removed because it violates our rule against asking for karma. Asking for upvotes, likes, comments, or any other form of vote manipulation is not allowed on this subreddit. This includes any language that hints at or encourages users to engage in vote manipulation. Please review the rules before posting again. *If you think your post was removed wrongfully, please message the mods.*
+action_reason: vote manipulation {{match}}
+#comment: |
+#  Your {{kind}} has been removed because it violates our rule against asking for karma. Asking for upvotes, likes, comments, or any other form of vote manipulation is not #allowed on this subreddit. This includes any language that hints at or encourages users to engage in vote manipulation. Please review the rules before posting again. *If #you think your post was removed wrongfully, please message the mods.*
 ---
 # Mass spam crossposters and other ban evading subs
 # ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2025,7 +2034,7 @@ crosspost_subreddit:
       "HornyCuteGirls",
     ]
 action: remove
-
+action_reason: spammy subs/posts {{match}}
 ---
 # Potentially unwanted words & content / Non-English Characters.
 # Words that usually cause beg spam or other messes
@@ -2331,19 +2340,17 @@ title+body (regex):
     "add me",
     "add her",
     "selling",
-    "$",
+    "\\$",
     "snapchat",
     "snap",
     "dropbox",
     "cashapp",
     "venmo",
-    "onlyfans",
     "follow",
     "manyvids",
     "patreon",
     "discord",
     "Sale",
-    "porn",
     "Sextape",
     "paypal",
     "Check My Profile",
@@ -2353,8 +2360,6 @@ title+body (regex):
     "Pls do it",
     "chat if interested",
     "(send|type) (.*) if you",
-    "fansly",
-    "onlyfans",
     "megas",
     "snap(chat)?s[?]",
     "snap(chat)?s:",
@@ -2390,7 +2395,7 @@ title+body (regex):
   ]
 action: remove
 action_reason: post spam removal - {{match}}
-comment: "Your post has been removed because the automod detected it as spam or advertising. These things are not allowed on this sub. Please read the rules before posting again.*If you think your post was removed wrongfully, please message the mods.*"
+#comment: "Your post has been removed because the automod detected it as spam or advertising. These things are not allowed on this sub. Please read the rules before #posting again.*If you think your post was removed wrongfully, please message the mods.*"
 ---
 
 ---
@@ -2418,8 +2423,6 @@ title+body (regex):
     "Pls do it",
     "chat if interested",
     "(send|type) (.*) if you",
-    "fansly",
-    "onlyfans",
     "megas",
     "snap(chat)?s[?]",
     "snap(chat)?s:",
@@ -2469,7 +2472,6 @@ title+body+media_description (regex):
     "groupchat",
     "hmu",
     "i got it",
-    "lmk",
     "me too please",
     "me too pls",
     "more pls",
@@ -2495,49 +2497,8 @@ title+body+media_description (regex):
   ]
 moderators_exempt: true
 action: remove
-action_reason: "Blacklisted Word: {{match}}"
-comment: "Your post was removed because the automoderator detected it as spam,or a dm request, those things are not allowed here.*If you think this is incorrect please message the mods*"
----
-
----
-# dissallow dm requests comments
-type: comment
-body (regex):
-  [
-    "hit me up",
-    "dm",
-    "dms",
-    "groupchat",
-    "hmu",
-    "i got it",
-    "lmk",
-    "me too please",
-    "me too pls",
-    "more pls",
-    "please post",
-    "pls post",
-    "pm",
-    "reup",
-    "send em",
-    "send it",
-    "send them",
-    "send to me",
-    "somebody post",
-    "would love to chat",
-    "chat if interested",
-    "spam me",
-    "pm",
-    "pms",
-    "leave a (.*) surprise",
-    "any takers",
-    "Pls do it",
-    "Text me",
-    "Seeking",
-  ]
-moderators_exempt: true
-action: remove
-action_reason: "Blacklisted Word: {{match}}"
-comment: "Your comment was removed because the automoderator detected it as spam,or a dm request, those things are not allowed here.*If you think this is incorrect please message the mods*"
+action_reason: "dm request spam: {{match}}"
+#comment: "Your post was removed because the automoderator detected it as spam,or a dm request, those things are not allowed here.*If you think this is incorrect please #message the mods*"
 ---
 
 ---
@@ -2552,12 +2513,12 @@ title+body (regex):
     "insta(gram?) is",
     "my t(i|l|1)k(tok)?",
     "snap(chat)?s[?]",
-    "snap(chat)?s:",
+    "snap(chat):",
     "decide (.*) how long I should be locked up",
   ]
 action: remove
-action_reason: "social in post ({{match}})"
-comment: "Your post was removed due to it containing a reference or link to an external social media or communications app. We do not allow those here. If you believe this is a mistake please feel free to contact the sub moderators. Attempts to circumvent our sub rules or mod tools will lead to you getting banned. *If you think your post was removed wrongfully, please message the mods.* "
+action_reason: "social in {{kind}} ({{match}})"
+comment: "Your {{kind}} was removed due to it containing a reference or link to an external social media or communications app. We do not allow those here. If you believe this is a mistake please feel free to contact the sub moderators. Attempts to circumvent our sub rules or mod tools will lead to you getting banned. *If you think your post was removed wrongfully, please message the mods.* "
 ---
 
 ---
@@ -2574,7 +2535,7 @@ message: you comment was removed because we do not allow the remond me bot on po
 ---
 # social media links
 type: any
-title+body:
+title+body+url:
   [
     "xxxtik",
     "snap",
@@ -2623,7 +2584,6 @@ title+body:
     "Discord",
     "wickr",
     "kiiik",
-    "Twitter",
     "Tik Tok",
     "kikkk",
     "Kiikkkmee",
@@ -2666,6 +2626,7 @@ title+body:
   ]
 action: remove
 action_reason: "social in post ({{match}})"
+
 ---
 
 ---
