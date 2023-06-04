@@ -2640,11 +2640,18 @@ title+body+url:
     "groupchat",
     "insta",
     "facebook",
-    "tiktok",
+    "omeagle"
   ]
 action: remove
 action_reason: "social in post ({{match}})"
-
+comment: "We do not allow links to social media or chat websites like omeagle in posts"
+---
+---
+type: submission
+url(includes): ["tiktok"]
+action: remove
+action_reason: "social in post ({{match}})"
+comment: "We do not allow links to social media or chat websites like omeagle in posts"
 ---
 ---
 # social media links
@@ -2733,7 +2740,6 @@ title+body+url:
     "add her",
     "groupchat",
     "facebook",
-    "tiktok",
   ]
 ~title+body(regex):
   [
