@@ -1,0 +1,84 @@
+---
+# straight porn solved flair rule
+type: comment
+body (includes) : ['solved']
+author:
+   is_submitter: true
+parent_submission:
+   flair_template_id: 69be73c2-030e-11ee-8841-62425ca70312
+   set_flair: 
+       template_id: 697d4554-030f-11ee-8354-02f858951b26
+   overwrite_flair: true
+---
+---
+# trans porn solved flair rule
+type: comment
+body (includes) : ['solved']
+author:
+   is_submitter: true
+parent_submission:
+   flair_template_id: 64e48b84-030e-11ee-bd92-2a782da819d3
+   set_flair: 
+       template_id: 61b8a2d2-030f-11ee-b0b1-0ae284bff8cc
+   overwrite_flair: true
+---
+---
+# gay porn solved flair rule
+type: comment
+body (includes) : ['solved']
+author:
+   is_submitter: true
+parent_submission:
+   flair_template_id: 6ebcf4e8-030e-11ee-a474-3a84cb39da8f
+   set_flair: 
+       template_id: 793c6bc8-030f-11ee-8827-da8d52b906bd
+   overwrite_flair: true
+---
+---
+# solo female solved flair rule
+type: comment
+body (includes) : ['solved']
+author:
+   is_submitter: true
+parent_submission:
+   flair_template_id: 7412f1f4-030e-11ee-bfd8-72ee626aa729
+   set_flair: 
+       template_id: 90cbf5b0-030f-11ee-b83c-822758a6c380
+   overwrite_flair: true
+---
+---
+# solo trans female solved flair rule
+type: comment
+body (includes) : ['solved']
+author:
+   is_submitter: true
+parent_submission:
+   flair_template_id: 77ffc274-030e-11ee-85df-2e4c22a2ea00
+   set_flair: 
+       template_id: 9b130c8e-030f-11ee-b602-5eafde0efc00
+   overwrite_flair: true
+---
+---
+# solo male solved flair rule
+type: comment
+body (includes) : ['solved']
+author:
+   is_submitter: true
+parent_submission:
+   flair_template_id: 7df79ae4-030e-11ee-a618-520309781b9b
+   set_flair: 
+       template_id: 84ddbe50-030f-11ee-a6bc-f645af2eb10b
+   overwrite_flair: true
+---
+---
+# solo femboy solved flair rule
+type: comment
+body (includes) : ['solved']
+author:
+   is_submitter: true
+parent_submission:
+   flair_template_id: 8f06f37a-030e-11ee-ac42-1abe01e64f2a
+   set_flair: 
+       template_id: a1943650-030f-11ee-8238-2ece50c20d7a
+   overwrite_flair: true
+---
