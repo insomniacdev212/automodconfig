@@ -213,6 +213,7 @@ domain+body+title+media_description+url (includes) :
     "disgracetube.com",
     "schoolgirlstube.com",
     "bigclittube.com",
+     "\\/rb.gy",
     "obscenegames.site",
     "gonewild.buzz closuptube.com",
     "closeuptube.com",
@@ -1656,7 +1657,6 @@ type: comment
 
 body (includes):
   [
-    "/user/",
     "invite",
     "boobnosis",
     "linktr",
@@ -2392,6 +2392,10 @@ title+body (regex):
     "gcash",
     "gc",
     "sn4pchat",
+    "sn4pchat",
+    "(sanding|sending) my sextape",
+    ",,",
+    "\\.\\.\\.\\."
   ]
 action: remove
 action_reason: post spam removal - {{match}}
@@ -2438,7 +2442,7 @@ title+body (regex):
     "snapme:",
     "snapc",
     "snapc:",
-    "$snap",
+    "\\$snap",
     "Snapcht",
     "snapchat@",
     "s/c",
@@ -2453,11 +2457,10 @@ title+body (regex):
     "cashapp",
     "venmo",
     "gcash",
-    "gc",
-    "sn4pchat",
+    "gc"
   ]
 action: remove
-action_reason: post spam removal - {{match}}
+action_reason: comment spam removal - {{match}}
 ---
 # no dm config
 # ----------------------------------------------------------------------------------------------------------
@@ -2524,7 +2527,7 @@ comment: "Your {{kind}} was removed due to it containing a reference or link to 
 ---
 type: comment
 title+body (regex):
-  ["remindme", "RemindMe", "!RemindMe", "RemindMe!", "!Remind"]
+  ["remindme", "RemindMe", "!RemindMe", "RemindMe!", "!Remind","\\/save"]
 action: remove
 action_reason: "called remindme bot ({{match}})"
 message: you comment was removed because we do not allow the remond me bot on posts in this sub
@@ -2534,7 +2537,7 @@ message: you comment was removed because we do not allow the remond me bot on po
 # dissallow social media
 ---
 # social media links
-type: any
+type: submission
 title+body+url:
   [
     "xxxtik",
@@ -2627,6 +2630,102 @@ title+body+url:
 action: remove
 action_reason: "social in post ({{match}})"
 
+---
+---
+# social media links
+type: comment
+title+body+url:
+  [
+    "xxxtik",
+    "snap",
+    "snpcht",
+    "snapcht",
+    "snapct",
+    "snpcht",
+    "snapp",
+    "sn@p",
+    "kik",
+    "K ik",
+    "Snap",
+    "Sn@p",
+    "snapchat",
+    "kÏk",
+    "klk",
+    "k:k",
+    "snÄp",
+    "sc",
+    "ki.k",
+    "snåp",
+    "K!K",
+    "k1k",
+    "sn4p",
+    "k.ik",
+    "K . I.k",
+    "K . I.k:",
+    "S nap:",
+    "kiik",
+    "SNAPis",
+    "kick",
+    "kikme:",
+    "snapme:",
+    "kikk",
+    "$nap",
+    "ki:",
+    "wick:",
+    "wicker:",
+    "wicker",
+    "snapc",
+    "snapc:",
+    "$snap",
+    "Snapcht",
+    "snapchat@",
+    "K I K",
+    "Discord",
+    "wickr",
+    "kiiik",
+    "Tik Tok",
+    "kikkk",
+    "Kiikkkmee",
+    "skype",
+    "k.k",
+    "k 1 k",
+    "Kiikik",
+    "Kyik",
+    "wallclaimer",
+    "Ki1k",
+    "s/c",
+    "premiums?",
+    "customs?",
+    "live IG",
+    "IG live",
+    "tgs?",
+    "telegrams?",
+    "discord?s",
+    "casual_hookup",
+    "hornysinglepartner",
+    "dirtyhookups",
+    "sn4pchat",
+    "facetime",
+    "k ik",
+    "discord",
+    "follow my",
+    "kik",
+    "snapchat",
+    "annajournal",
+    "join my",
+    "add my",
+    "add me",
+    "add her",
+    "groupchat",
+    "facebook",
+    "tiktok",
+  ]
+~title+body(regex):
+  [
+   "[a-z,A-Z]\\d{1,6} on IG"
+  ]
+action: remove
+action_reason: "social in post ({{match}})"
 ---
 
 ---
