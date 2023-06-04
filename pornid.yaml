@@ -6,6 +6,15 @@ comment: "##**Remember to change your post's flair to solved when you've found t
 And Please remember to thank the person who finds the source for you!"
 ---
 ---
+#comment min character count rule
+type: comment
+author:
+  is_submitter: false
+body_shorter_than: 3
+action: remove
+action_reason: little to no body to comment.
+---
+---
 # removed shadowbanned users
 type: any
 author:
