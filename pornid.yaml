@@ -1,4 +1,11 @@
 ---
+#solved flair reminder
+type: submission
+comment: "##**Remember to change your post's flair to solved when you've found the source!!!**
+
+And Please remember to thank the person who finds the source for you!"
+---
+---
 # removed shadowbanned users
 type: any
 author:
