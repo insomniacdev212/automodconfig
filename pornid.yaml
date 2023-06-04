@@ -2525,7 +2525,7 @@ action_reason: "dm request spam: {{match}}"
 # dissallow social media
 ---
 # social media links POSTS
-type: any
+type: submission
 title+body (regex):
   [
     "bio(graph(y|ie)?)?s?",
@@ -2638,11 +2638,9 @@ title+body+url:
     "add me",
     "add her",
     "groupchat",
-    "instagram",
     "insta",
     "facebook",
     "tiktok",
-    "IG",
   ]
 action: remove
 action_reason: "social in post ({{match}})"
