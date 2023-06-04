@@ -2,7 +2,7 @@
 #solved flair reminder
 type: submission
 comment: "##**Remember to change your post's flair to solved when you've found the source!!!**
-
+comment_stickied: true
 And Please remember to thank the person who finds the source for you!"
 ---
 ---
@@ -70,6 +70,7 @@ domain+body+title+media_description+url (includes) :
     "influencersgonewild.org",
     "xnimo.com",
     "toleaks.com",
+    "//t.me/",
     "xxxthebesthub.com",
     "boobpedia.net",
     "evoload.io",
@@ -2543,7 +2544,7 @@ comment: "Your {{kind}} was removed due to it containing a reference or link to 
 ---
 type: comment
 title+body (regex):
-  ["remindme", "RemindMe", "!RemindMe", "RemindMe!", "!Remind","\\/save"]
+  ["remindme", "RemindMe","RemindMe\\!", "\\!Remind","\\/save","\\!remindme","\\!remind"]
 action: remove
 action_reason: "called remindme bot ({{match}})"
 message: you comment was removed because we do not allow the remond me bot on posts in this sub
