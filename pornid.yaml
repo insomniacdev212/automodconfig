@@ -1,9 +1,13 @@
 ---
 #solved flair reminder
 type: submission
-comment: "##**Remember to change your post's flair to solved when you've found the source!!!**
+comment: |
+    ##** IMPORTANT INFORMATION READ ME**
 
-And Please remember to thank the person who finds the source for you!"
+    ###Once the source you were looking for has been found, **comment "solved","thx","thanks", or "thank you" so that automod can update the flair!**
+
+    And Please remember to thank the person who finds the source for you!"
+
 comment_stickied: true
 ---
 ---
@@ -297,7 +301,6 @@ domain+body+title+media_description+url (includes) :
     "d-ld.net",
     "perfectnaked.com",
     "hornierporn.live",
-    "xfantazy.com",
     "viraltop.info",
     "?.info",
     "?.click",
@@ -321,7 +324,6 @@ domain+body+title+media_description+url (includes) :
     "leakedplay.com",
     "bunkr.la",
     "pornleakz.co",
-    "mat6tube.com",
     "?.xyz",
     "gofile.us",
     "zleaks.one",
@@ -847,7 +849,6 @@ domain+body+title+media_description+url (includes):
     "urlpoints.com",
     "bhind.site",
     "pornleakz.co",
-    "mat6tube.com",
     "?.xyz",
     "temu.com",
     "?.cfd",
@@ -2778,19 +2779,31 @@ set_locked: true
 ---
 # straight porn solved flair rule
 type: comment
-body (includes) : ['solved']
+body (includes) : ['solved','thx','thanks','thank you']
 author:
    is_submitter: true
 parent_submission:
-   flair_template_id: 69be73c2-030e-11ee-8841-62425ca70312
+   flair_template_id: 04ef3fae-0353-11ee-8397-1ab55dc86b0f
    set_flair: 
-       template_id: 697d4554-030f-11ee-8354-02f858951b26
+       template_id: 0f40441c-0353-11ee-a13a-d61de5e4114a
+   overwrite_flair: true
+---
+---
+# lesbian porn solved flair rule
+type: comment
+body (includes) : ['solved','thx','thanks','thank you']
+author:
+   is_submitter: true
+parent_submission:
+   flair_template_id: 8f06f37a-030e-11ee-ac42-1abe01e64f2a
+   set_flair: 
+       template_id: a1943650-030f-11ee-8238-2ece50c20d7a
    overwrite_flair: true
 ---
 ---
 # trans porn solved flair rule
 type: comment
-body (includes) : ['solved']
+body (includes) : ['solved','thx','thanks','thank you']
 author:
    is_submitter: true
 parent_submission:
@@ -2802,7 +2815,7 @@ parent_submission:
 ---
 # gay porn solved flair rule
 type: comment
-body (includes) : ['solved']
+body (includes) : ['solved','thx','thanks','thank you']
 author:
    is_submitter: true
 parent_submission:
@@ -2814,7 +2827,7 @@ parent_submission:
 ---
 # solo female solved flair rule
 type: comment
-body (includes) : ['solved']
+body (includes) : ['solved','thx','thanks','thank you']
 author:
    is_submitter: true
 parent_submission:
@@ -2826,7 +2839,7 @@ parent_submission:
 ---
 # solo trans female solved flair rule
 type: comment
-body (includes) : ['solved']
+body (includes) : ['solved','thx','thanks','thank you']
 author:
    is_submitter: true
 parent_submission:
@@ -2838,7 +2851,7 @@ parent_submission:
 ---
 # solo male solved flair rule
 type: comment
-body (includes) : ['solved']
+body (includes) : ['solved','thx','thanks','thank you']
 author:
    is_submitter: true
 parent_submission:
@@ -2850,7 +2863,7 @@ parent_submission:
 ---
 # solo femboy solved flair rule
 type: comment
-body (includes) : ['solved']
+body (includes) : ['solved','thx','thanks','thank you']
 author:
    is_submitter: true
 parent_submission:
