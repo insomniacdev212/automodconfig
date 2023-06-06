@@ -1899,6 +1899,7 @@ title+body (includes):
     "Moodie Maggie",
     "YourPierini",
     "Brandy Gordon",
+    "piper rockelle"
   ]
 
 # modmail_subject: "USER POSTING OR REQUESTING BANNED CONTENT - REMOVE CONTENT AND BAN AS NECESSARY."
@@ -1922,7 +1923,7 @@ action_reason: "USER POSTING OR REQUESTING BANNED CONTENT - REMOVE CONTENT AND B
 type: any
 title+body (regex): ["(12|13|14|15|16|17) (yo|years?)"]
 ~title+body (regex): ["for (12|13|14|15|16|17) (years?)"]
-action: remove
+action: filter
 action_reason: You must be 18 years or older to post in this subreddit. We do not permit minors under the age of 18 to view, comment, nor do we allow mentioning actions done as a minor.
 ---
 
@@ -2783,9 +2784,9 @@ body (includes) : ['solved','thx','thanks','thank you']
 author:
    is_submitter: true
 parent_submission:
-   flair_template_id: 04ef3fae-0353-11ee-8397-1ab55dc86b0f
+   flair_template_id: 69be73c2-030e-11ee-8841-62425ca70312
    set_flair: 
-       template_id: 0f40441c-0353-11ee-a13a-d61de5e4114a
+       template_id: 697d4554-030f-11ee-8354-02f858951b26
    overwrite_flair: true
 ---
 ---
@@ -2795,9 +2796,9 @@ body (includes) : ['solved','thx','thanks','thank you']
 author:
    is_submitter: true
 parent_submission:
-   flair_template_id: 8f06f37a-030e-11ee-ac42-1abe01e64f2a
+   flair_template_id: 04ef3fae-0353-11ee-8397-1ab55dc86b0f
    set_flair: 
-       template_id: a1943650-030f-11ee-8238-2ece50c20d7a
+       template_id: 0f40441c-0353-11ee-a13a-d61de5e4114a
    overwrite_flair: true
 ---
 ---
